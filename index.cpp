@@ -65,17 +65,27 @@
 
 // 6) Write a Program to Swap Two Numbers
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int a = 10;
+//     int b = 20;
+//     int c;
+//     c = b;
+//     b = a;
+//     a = c;
+//     cout<<"THE VALUE OF A : "<<a<<endl;
+//     cout<<"THE VALUE OF B : "<<b<<endl;
+//     return 0;
+// };
+
+
+// 7) Write a Program to Find ASCII Value of a Character
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int a = 10;
-    int b = 20;
-    int c;
-    c = b;
-    b = a;
-    a = c;
-    cout<<"THE VALUE OF A : "<<a<<endl;
-    cout<<"THE VALUE OF B : "<<b<<endl;
+    char c = 'b';
+    cout<<int(c)<<endl;
     return 0;
-}
-
+};
