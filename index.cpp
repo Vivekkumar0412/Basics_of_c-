@@ -82,10 +82,27 @@
 
 // 7) Write a Program to Find ASCII Value of a Character
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     char c = 'b';
+//     cout<<int(c)<<endl;
+//     return 0;
+// };
+
+
+// 8) Write a Program to Multiply two decimal Numbers
+// entered by User
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    char c = 'b';
-    cout<<int(c)<<endl;
-    return 0;
+float a,b,c;
+cout<<"enter the value of a"<<endl;
+cin>>a;
+cout<<"enter the value of b"<<endl;
+cin>>b;
+c = a*b;
+cout<<c<<endl;
+return 0;
 };
