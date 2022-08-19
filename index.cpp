@@ -20,11 +20,29 @@
 // User
 
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int a,b;
+//     cin>>a>>b;
+//     cout<<a+b<<endl;
+//     return 0;
+// };
+
+
+// 4) Write a program where the user is asked to enter two
+// integers (divisor and dividend) and the quotient and the
+// remainder of their division is computed.(Both divisor and
+// dividend should be integers.)
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int a,b;
-    cin>>a>>b;
-    cout<<a+b<<endl;
+    int divisor,divedent;
+    cout<<"ENTER THE DIVISOR"<<endl;
+    cin>>divisor;
+    cout<<"ENTER THE DIVIDENT"<<endl;
+    cin>>divedent;
+    cout<<divedent/divisor<<endl;
     return 0;
 };
