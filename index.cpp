@@ -19,7 +19,6 @@
 // 3) Write a Program to Add Two Integer Numbers Entered by
 // User
 
-
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main(){
@@ -28,7 +27,6 @@
 //     cout<<a+b<<endl;
 //     return 0;
 // };
-
 
 // 4) Write a program where the user is asked to enter two
 // integers (divisor and dividend) and the quotient and the
@@ -62,7 +60,6 @@
 //     return 0;
 // };
 
-
 // 6) Write a Program to Swap Two Numbers
 
 // #include<bits/stdc++.h>
@@ -79,7 +76,6 @@
 //     return 0;
 // };
 
-
 // 7) Write a Program to Find ASCII Value of a Character
 
 // #include<bits/stdc++.h>
@@ -90,19 +86,62 @@
 //     return 0;
 // };
 
-
 // 8) Write a Program to Multiply two decimal Numbers
 // entered by User
 
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+// float a,b,c;
+// cout<<"enter the value of a"<<endl;
+// cin>>a;
+// cout<<"enter the value of b"<<endl;
+// cin>>b;
+// c = a*b;
+// cout<<c<<endl;
+// return 0;
+// };
+
+// ########## USING IF - ELSE CONDTIONS ###########
+
+// 1) Write a Program to Check Whether Number is Even or
+// Odd
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"enter the number "<<endl;
+//     cin>>n;
+//     if(n%2 == 0){
+//         cout<<"EVEN";
+//     }else{
+//         cout<<"ODD";
+//     };
+//     return 0;
+// };
+
+// ) Write a Program to Check Whether a Character is
+// Vowel or Consonant.
+
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-float a,b,c;
-cout<<"enter the value of a"<<endl;
-cin>>a;
-cout<<"enter the value of b"<<endl;
-cin>>b;
-c = a*b;
-cout<<c<<endl;
-return 0;
+int main()
+{
+    char c;
+    cout << "Enter the character: " << endl;
+    cin >> c;
+    cout << c<<endl;
+    // char lower = );
+    // char upper = ('A'||'E'||'I'||'O'||'U');
+
+    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+    {
+        cout << "VOWEL" << endl;
+    }
+    else
+    {
+        cout << "CONSONANAT" << endl;
+    }
+    return 0;
 };
