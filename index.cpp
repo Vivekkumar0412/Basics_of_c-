@@ -50,14 +50,32 @@
 // 5) Write a Program to Find Size of int, float, double and char
 // in your computer
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n = 9;
+//     float c = 3.4;
+//     char b = 'b';
+//     double z = 1802009.308083803;
+
+//     cout<<sizeof(n)<<sizeof(z)<<sizeof(b)<<sizeof(c);
+//     return 0;
+// };
+
+
+// 6) Write a Program to Swap Two Numbers
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n = 9;
-    float c = 3.4;
-    char b = 'b';
-    double z = 1802009.308083803;
-
-    cout<<sizeof(n)<<sizeof(z)<<sizeof(b)<<sizeof(c);
+    int a = 10;
+    int b = 20;
+    int c;
+    c = b;
+    b = a;
+    a = c;
+    cout<<"THE VALUE OF A : "<<a<<endl;
+    cout<<"THE VALUE OF B : "<<b<<endl;
     return 0;
 }
+
