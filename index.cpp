@@ -8,10 +8,23 @@
 
 // 2) Write a Program to Print Integer Number Entered by Use
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     cout<<n<<endl;
+// };
+
+// 3) Write a Program to Add Two Integer Numbers Entered by
+// User
+
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n;
-    cin>>n;
-    cout<<n<<endl;
+    int a,b;
+    cin>>a>>b;
+    cout<<a+b<<endl;
+    return 0;
 };
