@@ -124,24 +124,55 @@
 // ) Write a Program to Check Whether a Character is
 // Vowel or Consonant.
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     char c;
+//     cout << "Enter the character: " << endl;
+//     cin >> c;
+//     cout << c<<endl;
+//     // char lower = );
+//     // char upper = ('A'||'E'||'I'||'O'||'U');
+
+//     if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+//     {
+//         cout << "VOWEL" << endl;
+//     }
+//     else
+//     {
+//         cout << "CONSONANAT" << endl;
+//     }
+//     return 0;
+// };
+
+// 3) Write a Program to Find Largest Number Among Three
+// Numbers entered by users
+
 #include <bits/stdc++.h>
 using namespace std;
-int main()
-{
-    char c;
-    cout << "Enter the character: " << endl;
-    cin >> c;
-    cout << c<<endl;
-    // char lower = );
-    // char upper = ('A'||'E'||'I'||'O'||'U');
+int main(){
+    int a,b,c;
+    cout<<"ENTER THE VALUE OF A : "<<endl;
+    cin>>a;
+    cout<<"ENTER THE VALUE OF B : "<<endl;
+    cin>>b;
+    cout<<"ENTER THE VALUE OF C : "<<endl;
+    cin>>c;
 
-    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
-    {
-        cout << "VOWEL" << endl;
+    if(a>b){
+        if(a>c){
+            cout<<a<<" A IS THE GREATEST"<<endl;
+        }else{
+            cout<<c<<" C is the greatest"<<endl;
+        };
+    }else if(b>a){
+        if(b>c){
+            cout<<b<<" B is greatest"<<endl;
+        }else{
+            cout<<c<<" C is greatest"<<endl;
+        }
+    }else{
+        cout<<"ALL ARE SAME"<<endl;
     }
-    else
-    {
-        cout << "CONSONANAT" << endl;
-    }
-    return 0;
 };
