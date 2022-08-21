@@ -272,15 +272,30 @@
 // print your name n times
 
 
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// void prin(int n){
+//     for(int i = 1; i<=n; i++){
+//         cout<<"Vivek Kumar"<<endl;
+//     }
+// };
+// int main(){
+//     prin(10);
+//     return 0;
+// };
+
+// print all the elements in an array
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
+int main(){
+    int arr[] = {1,32,4,5,6,7,8};
 
-void prin(int n){
-    for(int i = 1; i<=n; i++){
-        cout<<"Vivek Kumar"<<endl;
+    for(int i = 0; i<7; i++){
+        cout<<arr[i]<<endl;
     }
 };
-int main(){
-    prin(10);
-    return 0;
-}
+
