@@ -342,17 +342,34 @@
 
 // linear search in an array
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[5] = {4, 5, 7, 59, 9};
+//     for (int i = 0; i < 5; i++)
+//     {
+//         if (arr[i] == 59)
+//         {
+//             cout << "Found the lucky number at : " << i << " and the number is : " << arr[i];
+//         };
+//     };
+//     return 0;
+// };
+
+#include<bits/stdc++.h>
 using namespace std;
-int main()
-{
-    int arr[5] = {4, 5, 7, 59, 9};
-    for (int i = 0; i < 5; i++)
-    {
-        if (arr[i] == 59)
-        {
-            cout << "Found the lucky number at : " << i << " and the number is : " << arr[i];
-        };
+int main(){
+    int arr[100];
+    int n;
+    cout<<"Enter the size of n : "<<endl;
+    cin>>n;
+    for(int i =0; i<n;i++){
+        cin>>arr[i];
+    };
+
+    for(int i = 0; i<n; i++){
+        cout<<"value is : "<<arr[i]<<endl;
     };
     return 0;
 }
