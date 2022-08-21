@@ -149,30 +149,48 @@
 // 3) Write a Program to Find Largest Number Among Three
 // Numbers entered by users
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int a,b,c;
+//     cout<<"ENTER THE VALUE OF A : "<<endl;
+//     cin>>a;
+//     cout<<"ENTER THE VALUE OF B : "<<endl;
+//     cin>>b;
+//     cout<<"ENTER THE VALUE OF C : "<<endl;
+//     cin>>c;
+
+//     if(a>b){
+//         if(a>c){
+//             cout<<a<<" A IS THE GREATEST"<<endl;
+//         }else{
+//             cout<<c<<" C is the greatest"<<endl;
+//         };
+//     }else if(b>a){
+//         if(b>c){
+//             cout<<b<<" B is greatest"<<endl;
+//         }else{
+//             cout<<c<<" C is greatest"<<endl;
+//         }
+//     }else{
+//         cout<<"ALL ARE SAME"<<endl;
+//     }
+// };
+// 4) Write a Program which accepts coefficients of a
+// quadratic equation from the user and displays the roots
+// (both real and complex roots depending upon the
+// discriminant).
+
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int a,b,c;
-    cout<<"ENTER THE VALUE OF A : "<<endl;
-    cin>>a;
-    cout<<"ENTER THE VALUE OF B : "<<endl;
-    cin>>b;
-    cout<<"ENTER THE VALUE OF C : "<<endl;
-    cin>>c;
 
-    if(a>b){
-        if(a>c){
-            cout<<a<<" A IS THE GREATEST"<<endl;
-        }else{
-            cout<<c<<" C is the greatest"<<endl;
-        };
-    }else if(b>a){
-        if(b>c){
-            cout<<b<<" B is greatest"<<endl;
-        }else{
-            cout<<c<<" C is greatest"<<endl;
-        }
-    }else{
-        cout<<"ALL ARE SAME"<<endl;
-    }
+int sum(int a, int b){
+    // cout<<"sum is : "<<a+b<<endl;
+    return a+b;
+}
+int main(){
+    int a = 80;
+    int c = 90;
+    cout<<sum(a,c);
+    return 0;
 };
