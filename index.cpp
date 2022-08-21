@@ -304,16 +304,27 @@
 // print all the elements in an array using function
 // while we are using functio to print the elemts of an array it is recommended that we should always take size of array as input.
 
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// void pr(int arr[],int size){
+//     for(int i = 0; i<size; i++){
+//         cout<<arr[i]<<endl;
+//     };
+// };
+// int main(){
+//     int arr[5] = {3,46,8,98,44};
+//     pr(arr,5);
+// }
+
 #include<bits/stdc++.h>
 using namespace std;
 
-void pr(int arr[],int size){
-    for(int i = 0; i<size; i++){
-        cout<<arr[i]<<endl;
-    };
-};
 int main(){
-    int arr[5] = {3,46,8,98,44};
-    pr(arr,5);
+    int arr[] = {1,2,3,5};
+    cout<<sizeof(arr);
+    return 0;
 }
+
+
 
