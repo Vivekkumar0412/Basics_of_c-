@@ -289,13 +289,31 @@
 
 
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr[] = {1,32,4,5,6,7,8};
+
+//     for(int i = 0; i<7; i++){
+//         cout<<arr[i]<<endl;
+//     }
+// };
+
+
+
+// print all the elements in an array using function
+// while we are using functio to print the elemts of an array it is recommended that we should always take size of array as input.
+
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
-    int arr[] = {1,32,4,5,6,7,8};
 
-    for(int i = 0; i<7; i++){
+void pr(int arr[],int size){
+    for(int i = 0; i<size; i++){
         cout<<arr[i]<<endl;
-    }
+    };
 };
+int main(){
+    int arr[5] = {3,46,8,98,44};
+    pr(arr,5);
+}
 
