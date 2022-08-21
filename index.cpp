@@ -195,7 +195,6 @@
 //     return 0;
 // };
 
-
 // pass by value;
 
 // #include <bits/stdc++.h>
@@ -209,7 +208,6 @@
 //     s(40);
 //     return 0;
 // };
-
 
 // print all even number till n using funtion
 
@@ -228,19 +226,44 @@
 //     return 0;
 // };
 
-
 // Print all the squares using function
 
+// #include<bits/stdc++.h>
+// using namespace std;
 
-#include<bits/stdc++.h>
+// void sq(int n){
+//     for(int i = 1; i<=n; i++){
+//         cout<<"square of "<<i<<" is "<<i*i<<endl;
+//     };
+// }
+
+// int main(){
+//     sq(9);
+// }
+
+// find the factorail of the number using function
+
+#include <bits/stdc++.h>
 using namespace std;
 
-void sq(int n){
-    for(int i = 1; i<=n; i++){
-        cout<<"square of "<<i<<" is "<<i*i<<endl;
+void fact(int n)
+{
+    int prod = 1;
+    for (int i = n; i > 1; i--)
+    {
+        prod = prod * i;
     };
+    cout << prod << endl;
 }
 
-int main(){
-    sq(9);
+int main()
+{
+    fact(5);
+    // int p = 1;
+    // int n = 5;
+    // for(int i = n; i>1; i--){
+    //     p = p*i;
+    //     cout<<p<<endl;
+    // }
+    return 0;
 }
