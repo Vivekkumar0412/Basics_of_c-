@@ -213,18 +213,34 @@
 
 // print all even number till n using funtion
 
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// void allEVEN(int n){
+//     for(int i = 1; i<=n; i++){
+//         if(i%2 == 0){
+//             cout<<i<<" is a even number"<<endl;
+//         };
+//     }
+// }
+// int main(){
+//     allEVEN(19);
+//     return 0;
+// };
+
+
+// Print all the squares using function
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
-void allEVEN(int n){
+void sq(int n){
     for(int i = 1; i<=n; i++){
-        if(i%2 == 0){
-            cout<<i<<" is a even number"<<endl;
-        };
-    }
-}
-int main(){
-    allEVEN(19);
-    return 0;
+        cout<<"square of "<<i<<" is "<<i*i<<endl;
+    };
 }
 
+int main(){
+    sq(9);
+}
