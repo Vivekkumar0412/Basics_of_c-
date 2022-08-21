@@ -181,16 +181,32 @@
 // (both real and complex roots depending upon the
 // discriminant).
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int sum(int a, int b){
+//     // cout<<"sum is : "<<a+b<<endl;
+//     return a+b;
+// }
+// int main(){
+//     int a = 80;
+//     int c = 90;
+//     cout<<sum(a,c);
+//     return 0;
+// };
+
+
+// pass by value;
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int sum(int a, int b){
-    // cout<<"sum is : "<<a+b<<endl;
-    return a+b;
+void s(int n){
+    n = 20;
+    cout<<"Function value : "<<n<<endl;
 }
 int main(){
-    int a = 80;
-    int c = 90;
-    cout<<sum(a,c);
+    s(40);
     return 0;
 };
+
