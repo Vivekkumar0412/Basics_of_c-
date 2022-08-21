@@ -317,14 +317,35 @@
 //     pr(arr,5);
 // }
 
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     int arr[] = {1,2,3,5};
+//     cout<<sizeof(arr);
+//     // cout<<<<endl;
+//     return 0;
+// };
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int arr[] = {1,2,3,5};
-    cout<<sizeof(arr);
-    return 0;
+void arrCall(int arr[],int size){
+    arr[2] = 59;
+    // for(int i =0; i<size; i++){
+    //     cout<<"function ka value : "<<arr[i]<<endl;
+    // };
 }
+
+int main(){
+    int arr[4] ={5,6,84,6};
+
+    arrCall(arr,4);
+    for(int i =0; i<4; i++){
+        cout<<"MAIN KA ARRAY : "<<arr[i]<<endl;
+    } ;
+};
 
 
 
