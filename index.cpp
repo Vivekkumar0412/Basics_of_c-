@@ -268,9 +268,7 @@
 //     return 0;
 // }
 
-
 // print your name n times
-
 
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -287,8 +285,6 @@
 
 // print all the elements in an array
 
-
-
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main(){
@@ -298,8 +294,6 @@
 //         cout<<arr[i]<<endl;
 //     }
 // };
-
-
 
 // print all the elements in an array using function
 // while we are using functio to print the elemts of an array it is recommended that we should always take size of array as input.
@@ -327,25 +321,38 @@
 //     return 0;
 // };
 
+// #include<bits/stdc++.h>
+// using namespace std;
 
-#include<bits/stdc++.h>
+// void arrCall(int arr[],int size){
+//     arr[2] = 59;
+//     // for(int i =0; i<size; i++){
+//     //     cout<<"function ka value : "<<arr[i]<<endl;
+//     // };
+// }
+
+// int main(){
+//     int arr[4] ={5,6,84,6};
+
+//     arrCall(arr,4);
+//     for(int i =0; i<4; i++){
+//         cout<<"MAIN KA ARRAY : "<<arr[i]<<endl;
+//     } ;
+// };
+
+// linear search in an array
+
+#include <bits/stdc++.h>
 using namespace std;
-
-void arrCall(int arr[],int size){
-    arr[2] = 59;
-    // for(int i =0; i<size; i++){
-    //     cout<<"function ka value : "<<arr[i]<<endl;
-    // };
+int main()
+{
+    int arr[5] = {4, 5, 7, 59, 9};
+    for (int i = 0; i < 5; i++)
+    {
+        if (arr[i] == 59)
+        {
+            cout << "Found the lucky number at : " << i << " and the number is : " << arr[i];
+        };
+    };
+    return 0;
 }
-
-int main(){
-    int arr[4] ={5,6,84,6};
-
-    arrCall(arr,4);
-    for(int i =0; i<4; i++){
-        cout<<"MAIN KA ARRAY : "<<arr[i]<<endl;
-    } ;
-};
-
-
-
