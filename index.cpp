@@ -198,15 +198,33 @@
 
 // pass by value;
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void s(int n){
+//     n = 20;
+//     cout<<"Function value : "<<n<<endl;
+// }
+// int main(){
+//     s(40);
+//     return 0;
+// };
+
+
+// print all even number till n using funtion
+
+#include<bits/stdc++.h>
 using namespace std;
 
-void s(int n){
-    n = 20;
-    cout<<"Function value : "<<n<<endl;
+void allEVEN(int n){
+    for(int i = 1; i<=n; i++){
+        if(i%2 == 0){
+            cout<<i<<" is a even number"<<endl;
+        };
+    }
 }
 int main(){
-    s(40);
+    allEVEN(19);
     return 0;
-};
+}
 
