@@ -243,27 +243,44 @@
 
 // find the factorail of the number using function
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void fact(int n)
+// {
+//     int prod = 1;
+//     for (int i = n; i > 1; i--)
+//     {
+//         prod = prod * i;
+//     };
+//     cout << prod << endl;
+// }
+
+// int main()
+// {
+//     fact(5);
+//     // int p = 1;
+//     // int n = 5;
+//     // for(int i = n; i>1; i--){
+//     //     p = p*i;
+//     //     cout<<p<<endl;
+//     // }
+//     return 0;
+// }
+
+
+// print your name n times
+
+
+#include<bits/stdc++.h>
 using namespace std;
 
-void fact(int n)
-{
-    int prod = 1;
-    for (int i = n; i > 1; i--)
-    {
-        prod = prod * i;
-    };
-    cout << prod << endl;
-}
-
-int main()
-{
-    fact(5);
-    // int p = 1;
-    // int n = 5;
-    // for(int i = n; i>1; i--){
-    //     p = p*i;
-    //     cout<<p<<endl;
-    // }
+void prin(int n){
+    for(int i = 1; i<=n; i++){
+        cout<<"Vivek Kumar"<<endl;
+    }
+};
+int main(){
+    prin(10);
     return 0;
 }
