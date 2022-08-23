@@ -393,18 +393,53 @@
 //     return 0;
 // };
 
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     // char a = 'c';
+//     // cout<<a;
+//     // cout<<int(a);
+
+//     int arr[10] = {1};
+//     for(int i = 0; i<10; i++){
+//         cout<<arr[i]<<endl;
+//         cout<<sizeof(arr);
+//     };
+
+//     cout<<"1.5 cr ka pakage lag gaya:)"<<endl;
+//     return 0;
+// };
+
+// reverse an array
+
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-    // char a = 'c';
-    // cout<<a;
-    // cout<<int(a);
 
-    int arr[10] = {1};
-    for(int i = 0; i<10; i++){
-        cout<<arr[i]<<endl;
+void printArr(int arr[]){
+    for (int i =0; i < 6; i++)
+    {
+        cout << arr[i] << endl;
+    }
+}
+
+void revArr(int arr[], int size)
+{
+    int i = 0;
+    int j = size - 1;
+    
+    while (i < j)
+    {
+        swap(arr[i], arr[j]);
+        i++;
+        j--;
     };
-
-    cout<<"1.5 cr ka pakage lag gaya:)"<<endl;
+    printArr(arr);
+    
+}
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5, 6};
+    revArr(arr,6);
+    
     return 0;
-};
+}
