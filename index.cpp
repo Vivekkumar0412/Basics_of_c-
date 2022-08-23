@@ -502,49 +502,75 @@
 //     }
 // };
 
-
 // sort 0s , 1s and 2s in an array
 
+// #include<bits/stdc++.h>
+// using namespace std;
 
-#include<bits/stdc++.h>
+// void printarr(int arr[],int size){
+//     for(int i=0; i<size; i++){
+//         cout<<arr[i]<<" ";
+//     }
+// }
+// void arrsort(int arr[],int size){
+//     int one =0,zero =0,two=0;
+//     for(int i =0; i<size; i++){
+//         if(arr[i]==0){
+//             zero++;
+//         }else if(arr[i]==1){
+//             one++;
+//         }else{
+//             two++;
+//         };
+//     };
+
+//     int i =0;
+//     while(zero--){
+//         arr[i]=0;
+//         i++;
+//     };
+
+//     while(one--){
+//         arr[i]=1;
+//         i++;
+//     };
+
+//     while(two--){
+//         arr[i]=2;
+//         i++;
+//     };
+//     printarr(arr,18);
+// }
+// int main(){
+//     int arr[]= {2,2,2,1,1,1,1,1,0,0,0,0,1,2,1,2,1,0};
+//     arrsort(arr,18);
+// };
+
+// check palindrome in an aaray
+
+#include <bits/stdc++.h>
 using namespace std;
-
-void printarr(int arr[],int size){
-    for(int i=0; i<size; i++){
-        cout<<arr[i]<<" ";
-    }
-}
-void arrsort(int arr[],int size){
-    int one =0,zero =0,two=0;
-    for(int i =0; i<size; i++){
-        if(arr[i]==0){
-            zero++;
-        }else if(arr[i]==1){
-            one++;
-        }else{
-            two++;
-        };
+void arrrev(int arr[], int size)
+{
+    int i = 0;
+    int j = size - 1;
+    while (i < j)
+    {
+        if (arr[i] == arr[j])
+        {
+            i++;
+            j--;
+        }
+        else
+        {
+            cout << "NOT A PALINDROME" << endl;
+            break;
+        }
+        cout << "Palindrom";
     };
-
-
-    int i =0;
-    while(zero--){
-        arr[i]=0;
-        i++;
-    };
-
-    while(one--){
-        arr[i]=1;
-        i++;
-    };
-
-    while(two--){
-        arr[i]=2;
-        i++;
-    };
-    printarr(arr,18);
-}
-int main(){
-    int arr[]= {2,2,2,1,1,1,1,1,0,0,0,0,1,2,1,2,1,0};
-    arrsort(arr,18);
-}
+};
+int main()
+{
+    int arr[] = {1, 2, 1};
+    arrrev(arr, 3);
+};
