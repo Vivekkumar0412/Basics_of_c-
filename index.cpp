@@ -374,21 +374,37 @@
 //     return 0;
 // };
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[5] = {5, 7, 59, 4, 6};
+//     int max=0;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         max = arr[i];
+//         // cout << max << endl;
+//         if (max >= arr[i])
+//         {
+//             cout << max << endl;
+//             // continue;
+//         }
+//     }
+//     return 0;
+// };
+
+#include<bits/stdc++.h>
 using namespace std;
-int main()
-{
-    int arr[5] = {5, 7, 59, 4, 6};
-    int max=0;
-    for (int i = 0; i < 5; i++)
-    {
-        max = arr[i];
-        // cout << max << endl;
-        if (max >= arr[i])
-        {
-            cout << max << endl;
-            // continue;
-        }
-    }
+int main(){
+    // char a = 'c';
+    // cout<<a;
+    // cout<<int(a);
+
+    int arr[10] = {1};
+    for(int i = 0; i<10; i++){
+        cout<<arr[i]<<endl;
+    };
+
+    cout<<"1.5 cr ka pakage lag gaya:)"<<endl;
     return 0;
-}
+};
