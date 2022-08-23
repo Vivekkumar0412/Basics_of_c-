@@ -357,19 +357,38 @@
 //     return 0;
 // };
 
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int arr[100];
-    int n;
-    cout<<"Enter the size of n : "<<endl;
-    cin>>n;
-    for(int i =0; i<n;i++){
-        cin>>arr[i];
-    };
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr[100];
+//     int n;
+//     cout<<"Enter the size of n : "<<endl;
+//     cin>>n;
+//     for(int i =0; i<n;i++){
+//         cin>>arr[i];
+//     };
 
-    for(int i = 0; i<n; i++){
-        cout<<"value is : "<<arr[i]<<endl;
-    };
+//     for(int i = 0; i<n; i++){
+//         cout<<"value is : "<<arr[i]<<endl;
+//     };
+//     return 0;
+// };
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[5] = {5, 7, 59, 4, 6};
+    int max=0;
+    for (int i = 0; i < 5; i++)
+    {
+        max = arr[i];
+        // cout << max << endl;
+        if (max >= arr[i])
+        {
+            cout << max << endl;
+            // continue;
+        }
+    }
     return 0;
 }
