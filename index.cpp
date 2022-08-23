@@ -463,29 +463,41 @@
 // };
 
 //  swap number in alternate order
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {3, 4, 5, 4, 6, 7};
+//     int i =0;
+//     while(i<6){
+//         if(i<6){
+//             swap(arr[i],arr[i+1]);
+//             i = i+2;
+//         }
+//     }
+//     // for (int i = 0; i < 7;)
+//     // {
+//     //     if (i < 7)
+//     //     {
+//     //         swap(arr[i], arr[i + 1]);
+//     //         i = i + 2;
+//     //     }
+//     // };
+//     for (int i = 0; i < 6; i++)
+//     {
+//         cout << arr[i] << endl;
+//     }
+//     return 0;
+// };
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     int arr[] = {3, 4, 5, 4, 6, 7};
-    int i =0;
-    while(i<6){
-        if(i<6){
-            swap(arr[i],arr[i+1]);
-            i = i+2;
-        }
-    }
-    // for (int i = 0; i < 7;)
-    // {
-    //     if (i < 7)
-    //     {
-    //         swap(arr[i], arr[i + 1]);
-    //         i = i + 2;
-    //     }
-    // };
+    sort(arr, arr + 6);
     for (int i = 0; i < 6; i++)
     {
         cout << arr[i] << endl;
     }
-    return 0;
 };
