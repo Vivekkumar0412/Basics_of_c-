@@ -426,7 +426,7 @@ void revArr(int arr[], int size)
 {
     int i = 0;
     int j = size - 1;
-    
+
     while (i < j)
     {
         swap(arr[i], arr[j]);
@@ -434,12 +434,32 @@ void revArr(int arr[], int size)
         j--;
     };
     printArr(arr);
-    
+
 }
 int main()
 {
     int arr[] = {1, 2, 3, 4, 5, 6};
     revArr(arr,6);
-    
+
     return 0;
+};
+
+Find the maximum number in an array
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void maxElem(int arr[],int size){
+    int ans = INT_MAX;
+    for(int i =0; i<size; i++){
+        ans = min(ans, arr[i]);
+    };
+    cout<<"MAXIMUM VALUE IS : "<<ans;
 }
+int main(){
+    int arr[]= {5,-1,6,7,8,59};
+    maxElem(arr,6);
+    return 0;
+};
+
+//
