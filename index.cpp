@@ -490,14 +490,61 @@
 //     return 0;
 // };
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {3, 4, 5, 4, 6, 7};
+//     sort(arr, arr + 6);
+//     for (int i = 0; i < 6; i++)
+//     {
+//         cout << arr[i] << endl;
+//     }
+// };
+
+
+// sort 0s , 1s and 2s in an array
+
+
+#include<bits/stdc++.h>
 using namespace std;
-int main()
-{
-    int arr[] = {3, 4, 5, 4, 6, 7};
-    sort(arr, arr + 6);
-    for (int i = 0; i < 6; i++)
-    {
-        cout << arr[i] << endl;
+
+void printarr(int arr[],int size){
+    for(int i=0; i<size; i++){
+        cout<<arr[i]<<" ";
     }
-};
+}
+void arrsort(int arr[],int size){
+    int one =0,zero =0,two=0;
+    for(int i =0; i<size; i++){
+        if(arr[i]==0){
+            zero++;
+        }else if(arr[i]==1){
+            one++;
+        }else{
+            two++;
+        };
+    };
+
+
+    int i =0;
+    while(zero--){
+        arr[i]=0;
+        i++;
+    };
+
+    while(one--){
+        arr[i]=1;
+        i++;
+    };
+
+    while(two--){
+        arr[i]=2;
+        i++;
+    };
+    printarr(arr,18);
+}
+int main(){
+    int arr[]= {2,2,2,1,1,1,1,1,0,0,0,0,1,2,1,2,1,0};
+    arrsort(arr,18);
+}
