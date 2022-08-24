@@ -548,29 +548,90 @@
 
 // check palindrome in an aaray
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// void arrrev(int arr[], int size)
+// {
+//     int i = 0;
+//     int j = size - 1;
+//     while (i < j)
+//     {
+//         if (arr[i] == arr[j])
+//         {
+//             i++;
+//             j--;
+//         }
+//         else
+//         {
+//             cout << "NOT A PALINDROME" << endl;
+//             break;
+//         }
+//         cout << "Palindrom";
+//     };
+// };
+// int main()
+// {
+//     int arr[] = {1, 2, 1};
+//     arrrev(arr, 3);
+// };
+
+// union in an array
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     cout<<"working";
+//     int arr1[] = {1, 3, 5, 7, 9};
+//     int arr2[] = {2, 4, 6, 8, 10};
+//     int arrun[11];
+//     int i, j, k = 0;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         if (arr1[i] == arr2[j])
+//         {
+//             // cin >> arrun[k];
+//             k++;
+//             i++;
+//             j++;
+//         }
+//         else if (arr1[i] < arr2[j])
+//         {
+//             // cin >> arrun[k];
+//             k++;
+//             i++;
+//         }
+//         else if (arr2[j] < arr1[i])
+//         {
+//             // cin >> arrun[k];
+//             k++;
+//             j++;
+//         };
+//     };
+
+//     for (int i = 0; i < 10; i++)
+//     {
+//         cout << arr1[i]<< " ";
+//     };
+//     return 0;
+// };
+
+
+// move all the negative number one side first approach
+// using sort() method.
 #include <bits/stdc++.h>
 using namespace std;
-void arrrev(int arr[], int size)
-{
-    int i = 0;
-    int j = size - 1;
-    while (i < j)
-    {
-        if (arr[i] == arr[j])
-        {
-            i++;
-            j--;
-        }
-        else
-        {
-            cout << "NOT A PALINDROME" << endl;
-            break;
-        }
-        cout << "Palindrom";
-    };
-};
-int main()
-{
-    int arr[] = {1, 2, 1};
-    arrrev(arr, 3);
-};
+void printarr(int arr[],int size){
+    for(int i =0; i<size; i++){
+        cout<<arr[i]<<" ";
+    }
+}
+void arrsort(int arr[],int size){
+    sort(arr,arr+size);
+    printarr(arr,size);
+}
+int main(){
+    int arr[]= {-1,3,4,-2,-6,7,9,0,-10,16};
+    arrsort(arr,10);
+    return 0;
+}
