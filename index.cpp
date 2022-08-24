@@ -616,22 +616,61 @@
 //     return 0;
 // };
 
-
 // move all the negative number one side first approach
 // using sort() method.
+// #include <bits/stdc++.h>
+// using namespace std;
+// void printarr(int arr[],int size){
+//     for(int i =0; i<size; i++){
+//         cout<<arr[i]<<" ";
+//     };
+// };
+// void arrsort(int arr[],int size){
+//     sort(arr,arr+size);
+//     printarr(arr,size);
+// };
+// int main(){
+//     int arr[]= {-1,3,4,-2,-6,7,9,0,-10,16};
+//     arrsort(arr,10);
+//     return 0;
+// };
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
-void printarr(int arr[],int size){
-    for(int i =0; i<size; i++){
-        cout<<arr[i]<<" ";
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 4, 5};
+    sort(arr,arr+5);
+    for(int j = 0; j<6;j++){
+        if(arr[j] == arr[j+1]){
+            cout << arr[j] << " ";
+            j++;
+        }
     }
-}
-void arrsort(int arr[],int size){
-    sort(arr,arr+size);
-    printarr(arr,size);
-}
-int main(){
-    int arr[]= {-1,3,4,-2,-6,7,9,0,-10,16};
-    arrsort(arr,10);
-    return 0;
-}
+};
+// {
+//     int arr[] = {1, 2, 3, 4, 4, 5};
+//     int arr2[10];
+//     int ans = 0;
+//     for (int i = 0; i < 6; i++)
+//     {
+//         ans = arr[i];
+//             arr2[i] = ans;
+//             if(arr[i] == arr2[i]){
+
+//             }
+
+            
+
+//         // for (int j = 0; j < 6; j++)
+//         // {
+            
+//         // };
+//     };
+
+    
+
+
+// };
