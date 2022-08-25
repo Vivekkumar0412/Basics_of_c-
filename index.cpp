@@ -635,8 +635,6 @@
 //     return 0;
 // };
 
-
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -662,32 +660,42 @@
 
 //             }
 
-            
-
 //         // for (int j = 0; j < 6; j++)
 //         // {
-            
+
 //         // };
 //     };
-
-    
-
 
 // };
 
 // printing subarray of an array
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr []= {1,2,3,4};
+//     for(int sp = 0; sp<4; sp++){
+//         for(int ep = sp; ep<4; ep++){
+//             for(int i = sp; i<=ep; i++){
+//                 cout<<arr[i];
+//                 // ans = sum;
+//             };
+//             cout<<endl;
+//         }
+//     };
+// }
+
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int arr []= {1,2,3,4};
-    for(int sp = 0; sp<4; sp++){
-        for(int ep = sp; ep<4; ep++){
-            for(int i = sp; i<=ep; i++){
-                cout<<arr[i];
-                // ans = sum;
-            };
-            cout<<endl;
-        }
+int main()
+{
+    for (int i = 1; i <= 10; i++)
+    {
+        for (int j = 1; j <= 5; j++)
+        {
+            cout << " * ";
+        };
+        cout << endl;
     };
-}
+    return 0;
+};
