@@ -637,19 +637,19 @@
 
 
 
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    int arr[] = {1, 2, 3, 4, 4, 5};
-    sort(arr,arr+5);
-    for(int j = 0; j<6;j++){
-        if(arr[j] == arr[j+1]){
-            cout << arr[j] << " ";
-            j++;
-        }
-    }
-};
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, 4, 5};
+//     sort(arr,arr+5);
+//     for(int j = 0; j<6;j++){
+//         if(arr[j] == arr[j+1]){
+//             cout << arr[j] << " ";
+//             j++;
+//         }
+//     }
+// };
 // {
 //     int arr[] = {1, 2, 3, 4, 4, 5};
 //     int arr2[10];
@@ -674,3 +674,20 @@ int main()
 
 
 // };
+
+// printing subarray of an array
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int arr []= {1,2,3,4};
+    for(int sp = 0; sp<4; sp++){
+        for(int ep = sp; ep<4; ep++){
+            for(int i = sp; i<=ep; i++){
+                cout<<arr[i];
+                // ans = sum;
+            };
+            cout<<endl;
+        }
+    };
+}
