@@ -571,8 +571,8 @@
 // };
 // int main()
 // {
-//     int arr[] = {1, 2, 1};
-//     arrrev(arr, 3);
+//     int arr[] = {1, 2, 1,4};
+//     arrrev(arr, 4);
 // };
 
 // union in an array
@@ -765,17 +765,99 @@
 //  *  *  *  *  *  *  *  *  *
 //  *  *  *  *  *  *  *  *  *  *
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+// void printpyramid(int n){
+//     for(int i = 1; i<=n; i++){
+//         for(int j = 1; j<=i; j++){
+//             cout<<" * ";
+//         };
+//         cout<<endl;
+//     }
+// }
+// int main(){
+//     printpyramid(10);
+//     return 0;
+// };
+
+// print inverted half pyramid
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void printpyramid(int n){
+//     for(int i = n; i>1; i--){
+//         for(int j = 1; j<i; j++){
+//             cout<<" * ";
+//         };
+//         cout<<endl;
+//     }
+// };
+// int main(){
+//     cout<<"hi"<<endl;
+//     printpyramid(8);
+//     return 0;
+// };
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void sortarr(int arr[],int size){
+//     sort(arr,arr+size);
+//     for(int i =0; i<size; i++){
+//         cout<<arr[i]<<" ";
+//     };
+// }
+
+// void sqr(int arr[], int size){
+//     for(int i = 0; i<size; i++){
+//         arr[i] = arr[i]*arr[i];
+//     };
+//     sortarr(arr,size);
+// }
+// int main(){
+//     int n;
+//     cout<<"enter the value n: "<<endl;
+//     cin>>n;
+//     int num[10000];
+//     for(int i =0; i<n; i++){
+//         cin>>num[i];
+//     };
+
+//     sqr(num,n);
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+
+//     int arr[] = {4,3,2,4,6};
+//     for(int i = 1; i<=5; i++){
+//      if(arr[i]==i+1){
+//         cout<<i;
+//      }   
+//     }
+// }
+
+#include<bits/stdc++.h>
 using namespace std;
-void printpyramid(int n){
-    for(int i = 1; i<=n; i++){
-        for(int j = 1; j<=i; j++){
-            cout<<" * ";
+void countOfElements(int arr[], int n, int x) 
+{   
+    int count =0;
+    int i =0;
+    while(i<n){
+        if(arr[i]<=x){
+            count++;
+            // i++;
         };
-        cout<<endl;
-    }
-}
+        i++;
+        
+    };
+    cout<<count;
+    
+};
 int main(){
-    printpyramid(10);
-    return 0;
-}
+    int arr[] ={1,2,3,4,5,6,7,8,9,10};
+    countOfElements(arr,10,9);
+};
