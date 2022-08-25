@@ -734,21 +734,48 @@
 //  *  *  *  *  *
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// void printrec(int l, int b){
+//     for(int i =1; i<=l; i++){
+//         for(int j = 1; j<=b; j++){
+//             if(i == 1 || i== l || j ==1 || j==b){
+//                 cout<<" * ";
+//             }else{
+//                 cout<<"   ";
+//             }
+//         }
+//         cout<<endl;
+//     }
+// }
+// int main(){
+//     printrec(5,5);
+//     return 0;
+// };
+
+// print half pyramid
+// * 
+//  *  *
+//  *  *  *
+//  *  *  *  *
+//  *  *  *  *  *
+//  *  *  *  *  *  *
+//  *  *  *  *  *  *  *
+//  *  *  *  *  *  *  *  *
+//  *  *  *  *  *  *  *  *  *
+//  *  *  *  *  *  *  *  *  *  *
+
 #include <bits/stdc++.h>
 using namespace std;
-void printrec(int l, int b){
-    for(int i =1; i<=l; i++){
-        for(int j = 1; j<=b; j++){
-            if(i == 1 || i== l || j ==1 || j==b){
-                cout<<" * ";
-            }else{
-                cout<<"   ";
-            }
-        }
+void printpyramid(int n){
+    for(int i = 1; i<=n; i++){
+        for(int j = 1; j<=i; j++){
+            cout<<" * ";
+        };
         cout<<endl;
     }
 }
 int main(){
-    printrec(5,5);
+    printpyramid(10);
     return 0;
-};
+}
