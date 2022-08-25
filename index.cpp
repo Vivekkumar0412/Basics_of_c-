@@ -709,18 +709,46 @@
 //  *           *
 //  *  *  *  *  *
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     for(int i = 1; i<=5; i++){
+//         for(int j = 1; j<=5; j++){
+//             if(i ==1 || i == 5 || j == 1 || j==5){
+//                 cout<<" * ";
+//             }else{
+//                 cout<<"   ";
+//             }
+//         };
+//         cout<<endl;
+//     }
+// };
+
+
+// print hollow rectangle using function
+
+//  *  *  *  *  * 
+//  *           *
+//  *           *
+//  *           *
+//  *  *  *  *  *
+
+
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-    for(int i = 1; i<=5; i++){
-        for(int j = 1; j<=5; j++){
-            if(i ==1 || i == 5 || j == 1 || j==5){
+void printrec(int l, int b){
+    for(int i =1; i<=l; i++){
+        for(int j = 1; j<=b; j++){
+            if(i == 1 || i== l || j ==1 || j==b){
                 cout<<" * ";
             }else{
                 cout<<"   ";
             }
-        };
+        }
         cout<<endl;
     }
+}
+int main(){
+    printrec(5,5);
+    return 0;
 };
-
