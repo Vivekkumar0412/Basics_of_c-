@@ -866,27 +866,55 @@
 
 // code to check the repeated elements
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// void sortarr(int arr[],int size){
+    
+//     // for(int i =0; i<size; i++){
+//     //     cout<<arr[i]<<" ";
+//     // }
+// };
+
+// void repeatelem(int arr[],int size){
+//     sort(arr,arr+size);
+//     for(int i =0; i<size; i++){
+//         if(arr[i] == arr[i+1]){
+//             cout<<arr[i]<<" ";
+//         }
+//     }
+// }
+// int main(){
+//     int arr[] = {2,3,1,2,3,4,4,7,0,9,0,6,5,3,1};
+//     repeatelem(arr,15);
+//     return 0;
+
+// };
+
+// ######### maximum sum of a subarray #########
+
 #include<bits/stdc++.h>
 using namespace std;
-void sortarr(int arr[],int size){
-    
-    // for(int i =0; i<size; i++){
-    //     cout<<arr[i]<<" ";
-    // }
-};
 
-void repeatelem(int arr[],int size){
-    sort(arr,arr+size);
-    for(int i =0; i<size; i++){
-        if(arr[i] == arr[i+1]){
-            cout<<arr[i]<<" ";
+void sum(int arr[],int size){
+    int sum =0;
+    int maxi = INT_MIN;
+    for(int sp=0; sp<size; sp++){
+        for(int ep =sp;ep<size;ep++){
+            for(int i =sp; i<=ep;i++){
+                // cout<<arr[i]<<" ";
+                sum+=arr[i];
+            };
+            maxi = max(maxi,sum);
+            sum =0;
         }
-    }
+    };
+    cout<<"maximum sum is : "<<maxi;
 }
 int main(){
-    int arr[] = {2,3,1,2,3,4,4,7,0,9,0,6,5,3,1};
-    repeatelem(arr,15);
+    int arr[]={5,-5,0,-3};
+    sum(arr,4);
     return 0;
+
 
 };
 
