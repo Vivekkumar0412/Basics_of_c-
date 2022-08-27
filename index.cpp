@@ -840,24 +840,54 @@
 //     }
 // }
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// void countOfElements(int arr[], int n, int x) 
+// {   
+//     int count =0;
+//     int i =0;
+//     while(i<n){
+//         if(arr[i]<=x){
+//             count++;
+//             // i++;
+//         };
+//         i++;
+        
+//     };
+//     cout<<count;
+    
+// };
+// int main(){
+//     int arr[] ={1,2,3,4,5,6,7,8,9,10};
+//     countOfElements(arr,10,9);
+// };
+
+
+
+// code to check the repeated elements
+
 #include<bits/stdc++.h>
 using namespace std;
-void countOfElements(int arr[], int n, int x) 
-{   
-    int count =0;
-    int i =0;
-    while(i<n){
-        if(arr[i]<=x){
-            count++;
-            // i++;
-        };
-        i++;
-        
-    };
-    cout<<count;
+void sortarr(int arr[],int size){
     
+    // for(int i =0; i<size; i++){
+    //     cout<<arr[i]<<" ";
+    // }
 };
+
+void repeatelem(int arr[],int size){
+    sort(arr,arr+size);
+    for(int i =0; i<size; i++){
+        if(arr[i] == arr[i+1]){
+            cout<<arr[i]<<" ";
+        }
+    }
+}
 int main(){
-    int arr[] ={1,2,3,4,5,6,7,8,9,10};
-    countOfElements(arr,10,9);
+    int arr[] = {2,3,1,2,3,4,4,7,0,9,0,6,5,3,1};
+    repeatelem(arr,15);
+    return 0;
+
 };
+
+
