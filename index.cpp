@@ -892,29 +892,63 @@
 
 // ######### maximum sum of a subarray #########
 
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// void sum(int arr[],int size){
+//     int sum =0;
+//     int maxi = INT_MIN;
+//     for(int sp=0; sp<size; sp++){
+//         for(int ep =sp;ep<size;ep++){
+//             for(int i =sp; i<=ep;i++){
+//                 // cout<<arr[i]<<" ";
+//                 sum+=arr[i];
+//             };
+//             maxi = max(maxi,sum);
+//             sum =0;
+//         }
+//     };
+//     cout<<"maximum sum is : "<<maxi;
+// }
+// int main(){
+//     int arr[]={5,-5,0,-3};
+//     sum(arr,4);
+//     return 0;
+
+
+// };
+
+//return the difference between the elements of an array
+
+
+#include <bits/stdc++.h>
 using namespace std;
-
-void sum(int arr[],int size){
-    int sum =0;
-    int maxi = INT_MIN;
-    for(int sp=0; sp<size; sp++){
-        for(int ep =sp;ep<size;ep++){
-            for(int i =sp; i<=ep;i++){
-                // cout<<arr[i]<<" ";
-                sum+=arr[i];
-            };
-            maxi = max(maxi,sum);
-            sum =0;
-        }
+void su(int a[], int n)
+{
+    int sum1 = 0;
+    int sum2 = 0;
+    for (int i = 0; i < n / 2; i++)
+    {
+        sum1 += a[i];
     };
-    cout<<"maximum sum is : "<<maxi;
+    for (int i = n/2; i < n; i++)
+    {
+        sum2 += a[i];
+    };
+    cout<<sum2<<" "<<sum1;
+    int num = sum2 - sum1;
+    cout<<num;
+    if (num < 0)
+    {
+        num = num - (-0);
+    };
+    cout << num;
 }
-int main(){
-    int arr[]={5,-5,0,-3};
-    sum(arr,4);
+int main()
+{
+    int arr[] = {1, 5, 3, 2};
+    su(arr,4);
     return 0;
-
 
 };
 
