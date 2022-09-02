@@ -700,10 +700,9 @@
 //     return 0;
 // };
 
-
 // print hollow rectangle
 
-//  *  *  *  *  * 
+//  *  *  *  *  *
 //  *           *
 //  *           *
 //  *           *
@@ -724,15 +723,13 @@
 //     }
 // };
 
-
 // print hollow rectangle using function
 
-//  *  *  *  *  * 
+//  *  *  *  *  *
 //  *           *
 //  *           *
 //  *           *
 //  *  *  *  *  *
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -754,7 +751,7 @@
 // };
 
 // print half pyramid
-// * 
+// *
 //  *  *
 //  *  *  *
 //  *  *  *  *
@@ -798,8 +795,6 @@
 //     return 0;
 // };
 
-
-
 // #include <bits/stdc++.h>
 // using namespace std;
 // void sortarr(int arr[],int size){
@@ -836,14 +831,14 @@
 //     for(int i = 1; i<=5; i++){
 //      if(arr[i]==i+1){
 //         cout<<i;
-//      }   
+//      }
 //     }
 // }
 
 // #include<bits/stdc++.h>
 // using namespace std;
-// void countOfElements(int arr[], int n, int x) 
-// {   
+// void countOfElements(int arr[], int n, int x)
+// {
 //     int count =0;
 //     int i =0;
 //     while(i<n){
@@ -852,24 +847,22 @@
 //             // i++;
 //         };
 //         i++;
-        
+
 //     };
 //     cout<<count;
-    
+
 // };
 // int main(){
 //     int arr[] ={1,2,3,4,5,6,7,8,9,10};
 //     countOfElements(arr,10,9);
 // };
 
-
-
 // code to check the repeated elements
 
 // #include<bits/stdc++.h>
 // using namespace std;
 // void sortarr(int arr[],int size){
-    
+
 //     // for(int i =0; i<size; i++){
 //     //     cout<<arr[i]<<" ";
 //     // }
@@ -911,15 +904,13 @@
 //     cout<<"maximum sum is : "<<maxi;
 // }
 // int main(){
-//     int arr[]={5,-5,0,-3};
-//     sum(arr,4);
+//     int arr[]={-2,-3,4,-1,-2,1,5,-3};
+//     sum(arr,8);
 //     return 0;
-
 
 // };
 
-//return the difference between the elements of an array
-
+// return the difference between the elements of an array
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -955,21 +946,92 @@
 // KADENS ALGORITHM
 // kadens algorithm basically return the maxium sum of contigious subarray.
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr[]={-1,-2,-3,4,-5};
+//     int maxi = INT_MIN;
+//     int sum =0;
+//     for(int i =0; i<5;i++){
+//         sum +=arr[i];
+//         maxi = max(sum,maxi);
+//         if(sum<0){
+//             sum = 0;
+//         }
+//     };
+//     cout<<maxi;
+//     return 0;
+// };
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int a[] = {1, 2, 3, 4, 7,3};
+//     int n = 6;
+//     string gender ="";
+//     sort(a, a + n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (a[i] == a[i + 1])
+//         {
+//             gender="BOYS";
+
+//             break;
+//         }else{
+//             gender = "BOYS";
+//         }
+
+//     }
+//     return gender;
+// }
+//     int arr[]={1,2,3,4,5,6};
+//     for(int i =0; i<6;i++){
+//         for(int j = i; j<6;j++){
+//             // for(int k =j; k<6;k++){
+//                 cout<<arr[j]<<" ";
+//             // }
+//         }
+//             cout<<endl;
+//     }
+// return 0;}
+
+// MAXIMUM SUM OF A SUBARRAY
+
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int arr[]={-1,-2,-3,4,-5};
+int main()
+{
+    int arr[] = {1, 2, 3, 4, -5, -6, 0, 9};
+    int sum = 0;
     int maxi = INT_MIN;
-    int sum =0;
-    for(int i =0; i<5;i++){
-        sum +=arr[i];
-        maxi = max(sum,maxi);
-        if(sum<0){
-            sum = 0;
-        }
+    for (int i = 0; i < 8; i++)
+    {
+        for (int j = i; j < 8; j++)
+        {
+            sum += arr[j];
+            maxi = max(maxi, sum);
+        };
+        sum = 0;
     };
-    cout<<maxi;
+    cout << maxi;
     return 0;
 }
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr[] = {1, 2, 3, 4, -5, -6, 0, 9};
+//     int maxi = INT_MIN;
+//     int sum = 0;
+//     for(int i = 0; i<8;i++){
+//         sum+=arr[i];
+//         maxi = max(maxi,sum);
+//         if(sum<0){
+//             sum = 0;
+//         }
+//     };
+//     cout<<maxi<<" ";
+
+// }
