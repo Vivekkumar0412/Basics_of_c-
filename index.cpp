@@ -946,22 +946,22 @@
 // KADENS ALGORITHM
 // kadens algorithm basically return the maxium sum of contigious subarray.
 
-// #include <bits/stdc++.h>
-// using namespace std;
-// int main(){
-//     int arr[]={-1,-2,-3,4,-5};
-//     int maxi = INT_MIN;
-//     int sum =0;
-//     for(int i =0; i<5;i++){
-//         sum +=arr[i];
-//         maxi = max(sum,maxi);
-//         if(sum<0){
-//             sum = 0;
-//         }
-//     };
-//     cout<<maxi;
-//     return 0;
-// };
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int arr[]={-1,-2,-3,4,-5};
+    int maxi = INT_MIN;
+    int sum =0;
+    for(int i =0; i<5;i++){
+        sum +=arr[i];
+        maxi = max(sum,maxi);
+        if(sum<0){
+            sum = 0;
+        }
+    };
+    cout<<maxi;
+    return 0;
+};
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -998,25 +998,25 @@
 
 // MAXIMUM SUM OF A SUBARRAY
 
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    int arr[] = {1, 2, 3, 4, -5, -6, 0, 9};
-    int sum = 0;
-    int maxi = INT_MIN;
-    for (int i = 0; i < 8; i++)
-    {
-        for (int j = i; j < 8; j++)
-        {
-            sum += arr[j];
-            maxi = max(maxi, sum);
-        };
-        sum = 0;
-    };
-    cout << maxi;
-    return 0;
-}
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, -5, -6, 0, 9};
+//     int sum = 0;
+//     int maxi = INT_MIN;
+//     for (int i = 0; i < 8; i++)
+//     {
+//         for (int j = i; j < 8; j++)
+//         {
+//             sum += arr[j];
+//             maxi = max(maxi, sum);
+//         };
+//         sum = 0;
+//     };
+//     cout << maxi;
+//     return 0;
+// }
 
 
 // #include <bits/stdc++.h>
