@@ -1039,22 +1039,41 @@
 
 // particular subarray that is equal to a particular value.
 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr[]={3,1,4,5,9,13,11};
+//     sort(arr,arr+7);
+//     int i = 0;
+//     int j=6;
+//     while(i<j){
+//         if(arr[i]+arr[j]==14){
+//             cout<<"<"<<arr[i]<<","<<arr[j]<<">"<<endl;
+//             i++;
+//             j--;
+//         }else if(arr[i]+arr[j]<14){
+//             i++;
+//         }else {
+//             j--;
+//         }
+//     };
+//     return 0;
+// }
+
+// find triplet whose sum is equal to target
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
     int arr[]={3,1,4,5,9,13,11};
     sort(arr,arr+7);
-    int i = 0;
-    int j=6;
-    while(i<j){
-        if(arr[i]+arr[j]==14){
-            cout<<"<"<<arr[i]<<","<<arr[j]<<">"<<endl;
-            i++;
-            j--;
-        }else if(arr[i]+arr[j]<14){
-            i++;
-        }else {
-            j--;
+    for(int i =0; i<7;i++){
+        for(int j = i; j<7;  j++){
+            for(int k =j; k<7;k++){
+                if(arr[i]+arr[j]+arr[k]==18){
+                    cout<<arr[i]<<","<<arr[j]<<","<<arr[k]<<endl;
+                };
+            }
         }
     };
     return 0;
