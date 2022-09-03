@@ -1071,24 +1071,26 @@ int main(){
     cout<<s;
     vector<int>v;
     cout<<v.capacity();
-    cout<<" SIZE : "<<v.size();
+    cout<<" SIZE : "<<v.size()<<endl;
     v.push_back(6);
     cout<<v.capacity();
-    cout<<" SIZE : "<<v.size();
+    cout<<" SIZE : "<<v.size()<<endl;
     v.push_back(6);
     cout<<v.capacity();
-    cout<<" SIZE : "<<v.size();
+    cout<<" SIZE : "<<v.size()<<endl;
     v.push_back(6);
     cout<<v.capacity();
-    cout<<" SIZE : "<<v.size();
+    cout<<" SIZE : "<<v.size()<<endl;
     v.push_back(6);
     cout<<v.capacity();
-    cout<<" SIZE : "<<v.size();
+    cout<<" SIZE : "<<v.size()<<endl;
     v.push_back(6);
     cout<<v.capacity();
-    cout<<" SIZE : "<<v.size();
+    cout<<" SIZE : "<<v.size()<<endl;
 
     cout<<v[2];
+    cout<<v.front()<<endl;
+    cout<<v.back()<<endl;
 
 
 
