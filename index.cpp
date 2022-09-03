@@ -912,36 +912,36 @@
 
 // return the difference between the elements of an array
 
-#include <bits/stdc++.h>
-using namespace std;
-void su(int a[], int n)
-{
-    int sum1 = 0;
-    int sum2 = 0;
-    for (int i = 0; i < n / 2; i++)
-    {
-        sum1 += a[i];
-    };
-    for (int i = n/2; i < n; i++)
-    {
-        sum2 += a[i];
-    };
-    cout<<sum2<<" "<<sum1;
-    int num = sum2 - sum1;
-    cout<<num;
-    if (num < 0)
-    {
-        num = num - (-0);
-    };
-    cout << num;
-}
-int main()
-{
-    int arr[] = {1, 5, 3, 2};
-    su(arr,4);
-    return 0;
+// #include <bits/stdc++.h>
+// using namespace std;
+// void su(int a[], int n)
+// {
+//     int sum1 = 0;
+//     int sum2 = 0;
+//     for (int i = 0; i < n / 2; i++)
+//     {
+//         sum1 += a[i];
+//     };
+//     for (int i = n/2; i < n; i++)
+//     {
+//         sum2 += a[i];
+//     };
+//     cout<<sum2<<" "<<sum1;
+//     int num = sum2 - sum1;
+//     cout<<num;
+//     if (num < 0)
+//     {
+//         num = num - (-0);
+//     };
+//     cout << num;
+// }
+// int main()
+// {
+//     int arr[] = {1, 5, 3, 2};
+//     su(arr,4);
+//     return 0;
 
-};
+// };
 
 // KADENS ALGORITHM
 // kadens algorithm basically return the maxium sum of contigious subarray.
@@ -1035,3 +1035,27 @@ int main()
 //     cout<<maxi<<" ";
 
 // }
+// 
+
+// particular subarray that is equal to a particular value.
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int arr[]={3,1,4,5,9,13,11};
+    sort(arr,arr+7);
+    int i = 0;
+    int j=6;
+    while(i<j){
+        if(arr[i]+arr[j]==14){
+            cout<<"<"<<arr[i]<<","<<arr[j]<<">"<<endl;
+            i++;
+            j--;
+        }else if(arr[i]+arr[j]<14){
+            i++;
+        }else if(arr[i]+arr[j]>14){
+            j--;
+        }
+    };
+    return 0;
+}
