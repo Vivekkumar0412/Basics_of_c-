@@ -1053,7 +1053,7 @@ int main(){
             j--;
         }else if(arr[i]+arr[j]<14){
             i++;
-        }else if(arr[i]+arr[j]>14){
+        }else {
             j--;
         }
     };
