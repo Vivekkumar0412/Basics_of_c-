@@ -1110,7 +1110,10 @@
     #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    vector<int>a(20,15);
+    vector<int>a;
+    a.push_back(19);
+    deque<int>d;
+    d.push_front(18);
     for(int i:a){
         cout<<a[i]<<endl;
     };
