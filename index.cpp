@@ -1062,35 +1062,35 @@
 
 // find triplet whose sum is equal to target
 
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int arr[]={3,1,4,5,9,13,11};
-    array<int ,4> a = {1,2,3,4};
-    int s = a.front();
-    cout<<s;
-    vector<int>v;
-    cout<<v.capacity();
-    cout<<" SIZE : "<<v.size()<<endl;
-    v.push_back(6);
-    cout<<v.capacity();
-    cout<<" SIZE : "<<v.size()<<endl;
-    v.push_back(6);
-    cout<<v.capacity();
-    cout<<" SIZE : "<<v.size()<<endl;
-    v.push_back(6);
-    cout<<v.capacity();
-    cout<<" SIZE : "<<v.size()<<endl;
-    v.push_back(6);
-    cout<<v.capacity();
-    cout<<" SIZE : "<<v.size()<<endl;
-    v.push_back(6);
-    cout<<v.capacity();
-    cout<<" SIZE : "<<v.size()<<endl;
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+    // int arr[]={3,1,4,5,9,13,11};
+    // array<int ,4> a = {1,2,3,4};
+    // int s = a.front();
+    // cout<<s;
+    // vector<int>v;
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size()<<endl;
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size()<<endl;
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size()<<endl;
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size()<<endl;
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size()<<endl;
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size()<<endl;
 
-    cout<<v[2];
-    cout<<v.front()<<endl;
-    cout<<v.back()<<endl;
+    // cout<<v[2];
+    // cout<<v.front()<<endl;
+    // cout<<v.back()<<endl;
 
 
 
@@ -1103,5 +1103,15 @@ int main(){
     //             };
     //         }
     //     }
-    };
+    // };
     // return 0;sssss
+
+
+    #include<bits/stdc++.h>
+using namespace std;
+int main(){
+    vector<int>a(20,15);
+    for(int i:a){
+        cout<<a[i]<<endl;
+    }
+}
