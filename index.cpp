@@ -1069,24 +1069,24 @@ int main(){
     array<int ,4> a = {1,2,3,4};
     int s = a.front();
     cout<<s;
-    // vector<int>v;
-    // cout<<v.capacity();
-    // cout<<" SIZE : "<<v.size();
-    // v.push_back(6);
-    // cout<<v.capacity();
-    // cout<<" SIZE : "<<v.size();
-    // v.push_back(6);
-    // cout<<v.capacity();
-    // cout<<" SIZE : "<<v.size();
-    // v.push_back(6);
-    // cout<<v.capacity();
-    // cout<<" SIZE : "<<v.size();
-    // v.push_back(6);
-    // cout<<v.capacity();
-    // cout<<" SIZE : "<<v.size();
-    // v.push_back(6);
-    // cout<<v.capacity();
-    // cout<<" SIZE : "<<v.size();
+    vector<int>v;
+    cout<<v.capacity();
+    cout<<" SIZE : "<<v.size();
+    v.push_back(6);
+    cout<<v.capacity();
+    cout<<" SIZE : "<<v.size();
+    v.push_back(6);
+    cout<<v.capacity();
+    cout<<" SIZE : "<<v.size();
+    v.push_back(6);
+    cout<<v.capacity();
+    cout<<" SIZE : "<<v.size();
+    v.push_back(6);
+    cout<<v.capacity();
+    cout<<" SIZE : "<<v.size();
+    v.push_back(6);
+    cout<<v.capacity();
+    cout<<" SIZE : "<<v.size();
 
 
 
