@@ -1113,5 +1113,8 @@ int main(){
     vector<int>a(20,15);
     for(int i:a){
         cout<<a[i]<<endl;
-    }
+    };
+
+    vector<int> d(a);
+    // all the elements of a will be copied to d
 }
