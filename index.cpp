@@ -1088,6 +1088,8 @@ int main(){
     cout<<v.capacity();
     cout<<" SIZE : "<<v.size();
 
+    cout<<v[2];
+
 
 
     // sort(arr,arr+7);
