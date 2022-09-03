@@ -1066,15 +1066,38 @@
 using namespace std;
 int main(){
     int arr[]={3,1,4,5,9,13,11};
-    sort(arr,arr+7);
-    for(int i =0; i<7;i++){
-        for(int j = i; j<7;  j++){
-            for(int k =j; k<7;k++){
-                if(arr[i]+arr[j]+arr[k]==18){
-                    cout<<arr[i]<<","<<arr[j]<<","<<arr[k]<<endl;
-                };
-            }
-        }
+    array<int ,4> a = {1,2,3,4};
+    int s = a.front();
+    cout<<s;
+    // vector<int>v;
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size();
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size();
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size();
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size();
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size();
+    // v.push_back(6);
+    // cout<<v.capacity();
+    // cout<<" SIZE : "<<v.size();
+
+
+
+    // sort(arr,arr+7);
+    // for(int i =0; i<7;i++){
+    //     for(int j = i; j<7;  j++){
+    //         for(int k =j; k<7;k++){
+    //             if(arr[i]+arr[j]+arr[k]==18){
+    //                 cout<<arr[i]<<","<<arr[j]<<","<<arr[k]<<endl;
+    //             };
+    //         }
+    //     }
     };
-    return 0;
-}
+    // return 0;sssss
