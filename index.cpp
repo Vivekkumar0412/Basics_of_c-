@@ -1133,11 +1133,17 @@ int main(){
 
     pair<int, pair<int,int>> mix;
     mix.first = 0;
-    mix.second.first = 1;
-    mix.second.second = 2;
+    // mix.second.first = 1;
+    // mix.second.second = 2;
 
-    cout<<mix.first<<endl;
-    cout<<mix.second.first<<endl;
-    cout<<mix.second.second<<endl;
+    // cout<<mix.first<<endl;
+    // cout<<mix.second.first<<endl;
+    // cout<<mix.second.second<<endl;
+
+
+    pair<int,int> arr[] = {{1,2},{4,5},{59,6}};
+    for(int i =0; i<3; i++){
+        cout<<arr[i].first<<" "<<arr[i].second<<endl;
+    }
     // pair_one.third = 59;
 }
