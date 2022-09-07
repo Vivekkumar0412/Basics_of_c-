@@ -1107,17 +1107,37 @@
     // return 0;sssss
 
 
-    #include<bits/stdc++.h>
+//     #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     vector<int>a;
+//     a.push_back(19);
+//     deque<int>d;
+//     d.push_front(18);
+//     d.pop_front();
+//     for(int i:a){
+//         cout<<a[i]<<endl;
+//     };
+
+//     vector<int> d(a);
+
+     
+    // all the elements of a will be copied to d
+
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
-    vector<int>a;
-    a.push_back(19);
-    deque<int>d;
-    d.push_front(18);
-    for(int i:a){
-        cout<<a[i]<<endl;
-    };
+    pair<int,int> pair_one;
+    pair_one.first = 9;
+    pair_one.second = 59;
 
-    vector<int> d(a);
-    // all the elements of a will be copied to d
+    pair<int, pair<int,int>> mix;
+    mix.first = 0;
+    mix.second.first = 1;
+    mix.second.second = 2;
+
+    cout<<mix.first<<endl;
+    cout<<mix.second.first<<endl;
+    cout<<mix.second.second<<endl;
+    // pair_one.third = 59;
 }
