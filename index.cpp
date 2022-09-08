@@ -1187,6 +1187,7 @@ int main(){
     // stack is also a container in stl which works on the principle of LIFO (last in first out);
 
     // in general there are only there functions for stack push() , pop() and top();
+    // all its function tc is O(1)
 
 
     stack<int> s;
@@ -1201,6 +1202,8 @@ int main(){
 
     // QUEUE IN STL
     // queue is also similar to the stack it is also a container but the basic difference is it works on the principle of FIFO(first in first out);
+
+    // all its function tc is O(1)
 
     queue<int> q;
     q.push(67);
