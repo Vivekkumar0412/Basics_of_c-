@@ -1182,5 +1182,20 @@ int main(){
     d.push_front(59);
     d.pop_back();
     d.size();
+
+    // STACK IN STL
+    // stack is also a container in stl which works on the principle of LIFO (last in first out);
+
+    // in general there are only there functions for stack push() , pop() and top();
+
+
+    stack<int> s;
+    s.push(59);
+    s.push(539);
+    s.push(9);
+    s.push(78);
+    s.pop(); // 78 removed
+    s.size(); // 3
+    cout<<s.top(); //9
     
 }
