@@ -1154,7 +1154,24 @@ int main(){
     vector<int>:: iterator it;
     for(it = x.begin(); it< x.end(); it++){
         cout<<*it<<endl;
-    }
+    };
+
+
+    // list in stl
+    // list is similar to vector but basic differenec is that it also have front functions whic were major missing in the vector
+
+    // insert operators are very costly in term of time complexity
+
+    //
+
+    list<int> ls;
+    ls.push_back(4);
+    ls.push_back(34);
+    ls.push_back(24);
+    ls.push_back(14);
+    ls.pop_back();
+    ls.size();
+    ls.emplace_front(59);
 
     // pair_one.third = 59;
 }
