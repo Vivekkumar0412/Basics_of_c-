@@ -1144,11 +1144,17 @@ int main(){
     pair<int,int> arr[] = {{1,2},{4,5},{59,6}};
     for(int i =0; i<3; i++){
         cout<<arr[i].first<<" "<<arr[i].second<<endl;
-    }
+    };
 
     vector<int> x(5,100);
-    for(int i = 0; i<5; i++){
-        cout<<x[i]<<endl;
+    // for(int i = 0; i<5; i++){
+    //     cout<<x[i]<<endl;
+    // };
+
+    vector<int>:: iterator it;
+    for(it = x.begin(); it< x.end(); it++){
+        cout<<*it<<endl;
     }
+
     // pair_one.third = 59;
 }
