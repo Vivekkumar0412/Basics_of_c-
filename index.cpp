@@ -1173,5 +1173,14 @@ int main(){
     ls.size();
     ls.emplace_front(59);
 
-    // pair_one.third = 59;
+
+    // Deque in stl
+    // Deque is same as list
+
+    deque<int> d;
+    d.push_back(3);
+    d.push_front(59);
+    d.pop_back();
+    d.size();
+    
 }
