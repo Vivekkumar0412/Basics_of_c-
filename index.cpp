@@ -1145,5 +1145,10 @@ int main(){
     for(int i =0; i<3; i++){
         cout<<arr[i].first<<" "<<arr[i].second<<endl;
     }
+
+    vector<int> x(5,100);
+    for(int i = 0; i<5; i++){
+        cout<<x[i]<<endl;
+    }
     // pair_one.third = 59;
 }
