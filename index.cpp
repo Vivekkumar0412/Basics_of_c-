@@ -1197,5 +1197,21 @@ int main(){
     s.pop(); // 78 removed
     s.size(); // 3
     cout<<s.top(); //9
+
+
+    // QUEUE IN STL
+    // queue is also similar to the stack it is also a container but the basic difference is it works on the principle of FIFO(first in first out);
+
+    queue<int> q;
+    q.push(67);
+    q.pop();
+    q.push(59);
+    q.push(159);
+    q.push(519);
+    q.push(591);
+    q.push(529);
+    q.push(593);
+    q.size();
+
     
 }
