@@ -1216,5 +1216,14 @@ int main(){
     q.push(593);
     q.size();
 
+    // set is a container in stl which basically holds the data in sorted format and main thing about the set is it holds data uniquely....means if an element is repeated then it will not be stored
+
+    set<int> st;
+    st.insert(10);
+    st.insert(10); // here 10 will not be stored
+    st.insert(110);
+    st.insert(0);
+
+
     
 }
