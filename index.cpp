@@ -1239,6 +1239,10 @@ int main(){
     pq.pop();  //210
     pq.top(); //110;
 
+    // we can also make minimum heap means priority_queue thats keep minimum data on the top
+
+    priority_queue<int, vector<int>, greater<int>> pm;
+
 
     
 }
