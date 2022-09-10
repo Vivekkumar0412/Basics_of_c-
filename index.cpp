@@ -1224,6 +1224,21 @@ int main(){
     st.insert(110);
     st.insert(0);
 
+    // Priority queue : - priority queue is similar to queue but the basic digfferenec is it holds the data in order means maximum element will always remain on the top
+
+    // it is also called as maximum heap
+
+    priority_queue<int> pq;
+    pq.push(10);
+    pq.push(101);
+    pq.push(110);
+    pq.push(1);
+    pq.push(0);
+    pq.push(210);
+    pq.top(); //210
+    pq.pop();  //210
+    pq.top(); //110;
+
 
     
 }
