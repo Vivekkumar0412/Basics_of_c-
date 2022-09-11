@@ -1244,5 +1244,12 @@ int main(){
     priority_queue<int, vector<int>, greater<int>> pm;
 
 
+    vector<int> a = {1,2,3,4,5,6,7,8,9,8,7,6,5,55,5};
+    int ind = lower_bound(a.begin(),a.end(),7)-a.begin();
+     cout<<ind<<" ye lower bound ka answer hai !!"<<endl;
+    //  cout<<*<<"ye element hai @@@"<<endl;
+
+
+
     
 }
